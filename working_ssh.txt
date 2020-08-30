@@ -1,0 +1,18 @@
+1. ssh-keygen -t rsa -b 4096 -C "your_email@example.com"  //enter your github email here
+press enter two times      // it ask u for name and passphrase but leave it emplty and press enter two times
+
+2. eval "$(ssh-agent -s)"
+
+3. ssh-add ~/.ssh/id_rsa
+
+4. sudo apt-get install xclip  // download this for copy data over clipboard (for linux only)
+
+5. xclip -sel clip < ~/.ssh/id_rsa.pub
+
+6. open ur github account and go to setting>ssh and gpg keys.
+
+7. give any name to the key as title and press ctrl+v in paste the key and click ok
+
+8. now do as u do usually for git projects.
+
+9. it ask for ssh_rsa only one time ...... just type yes and then u good to go with it.
